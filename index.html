@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的2017关键词</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+			}
+			div{
+				width: 100%;
+			}
+			.name{
+				width: 100%;
+				height: 2rem;
+				line-height: 2rem;
+				text-align: center;
+				font-size: 1.4rem;
+			}
+			.title{
+				background: url(img/title.jpg) no-repeat center;
+				height: 2rem;
+				line-height: 2rem;
+				font-size: 0.8rem;
+				text-align: center;
+				color: #666;
+			}
+			.content{
+				position: relative;
+				height: 15rem;
+				background: #fff;
+			}
+			.content p{
+				position: absolute;
+				border-radius: 50%;
+				color: #fff;
+				text-align: center;
+				z-index: 99;
+			}
+			.content p b{
+				display: block;
+				height: 100%;
+				width: 100%;
+				background: inherit;
+				border-radius: 50%;
+				z-index: 99;
+			}
+			.content p span{
+				display: block;
+				position: absolute;
+				width: 0.06rem;
+				background: #ccc;
+				top: 50%;
+				left: 50%;
+				transform-origin: 0 0;
+				z-index: -9;
+			}
+			.content p:nth-of-type(1){
+				height: 2.5rem;
+				line-height: 2.5rem;
+				width: 2.5rem;
+				background: #bf8472;
+				top: 1rem;
+				left: 2rem;
+				font-size: 0.8rem;
+			}
+			.content p:nth-of-type(1) span{
+				height: 6rem;
+				transform: rotate(-45deg); 
+			}
+			.content p:nth-of-type(2){
+				height: 1.5rem;
+				line-height: 1.5rem;
+				width: 1.5rem;
+				background: #f2d474;
+				top: 4rem;
+				left: 3rem;
+				font-size: 0.5rem;
+			}
+			.content p:nth-of-type(2) span{
+				height: 6rem;
+				transform: rotate(-60deg);
+			}
+			.content p:nth-of-type(3){
+				height: 3rem;
+				line-height: 3rem;
+				width: 3rem;
+				background: #d5b5ca;
+				top: 6.5rem;
+				left: 1rem;
+				font-size: 0.7rem;
+			}
+			.content p:nth-of-type(3) span{
+				height: 6rem;
+				transform: rotate(-95deg);
+			}
+			.content p:nth-of-type(4){
+				height: 4.5rem;
+				line-height: 4.5rem;
+				width: 4.5rem;
+				background: #e86c6c;
+				top: 11rem;
+				left: 1rem;
+				font-size: 1.5rem;
+			}
+			.content p:nth-of-type(4) span{
+				height: 6rem;
+				transform: rotate(-140deg);
+			}
+			.content p:nth-of-type(5){
+				height: 2.5rem;
+				line-height: 2.5rem;
+				width: 2.5rem;
+				background: #7fcef5;
+				top: 11rem;
+				left: 7rem;
+				font-size: 0.8rem;
+			}
+			.content p:nth-of-type(5) span{
+				height: 6rem;
+				transform: rotate(-180deg);
+			}
+			.content p:nth-of-type(6){
+				height: 3.5rem;
+				line-height: 3.5rem;
+				width: 3.5rem;
+				background: #b2ca6a;
+				top: 11rem;
+				left: 12rem;
+				font-size: 1.1rem;
+			}
+			.content p:nth-of-type(6) span{
+				height: 6rem;
+				transform: rotate(-230deg);
+			}
+			.content p:nth-of-type(7){
+				height: 2rem;
+				line-height: 2rem;
+				width: 2rem;
+				background: #fec195;
+				top: 7.5rem;
+				left: 11rem;
+				font-size: 0.7rem;
+			}
+			.content p:nth-of-type(7) span{
+				height: 6rem;
+				transform: rotate(-260deg);
+			}
+			.content p:nth-of-type(8){
+				height: 2.5rem;
+				line-height: 2.5rem;
+				width: 2.5rem;
+				background: #df6e99;
+				top: 5rem;
+				left: 13rem;
+				font-size: 0.8rem;
+			}
+			.content p:nth-of-type(8) span{
+				height: 6rem;
+				transform: rotate(-280deg);
+			}
+			.content p:nth-of-type(9){
+				height: 4.5rem;
+				line-height: 4.5rem;
+				width: 4.5rem;
+				background: #e2ae96;
+				top: 0.5rem;
+				left: 10.5rem;
+				font-size: 1.5rem;
+			}
+			.content p:nth-of-type(9) span{
+				height: 6rem;
+				transform: rotate(45deg);
+			}
+			.content p:nth-of-type(10){
+				height: 2.5rem;
+				line-height: 2.5rem;
+				width: 2.5rem;
+				background: #63c1c0;
+				top: 2rem;
+				left: 7rem;
+				font-size: 0.8rem;
+			}
+			.content p:nth-of-type(10) span{
+				height: 6rem;
+				transform: rotate(0deg);
+			}
+			.pic{
+				top: 50%;
+				left: 50%;
+				height: 3rem;
+				width: 3rem;
+				border: 0.06rem solid #ccc;
+				box-shadow: 0 0 5px 3px #f1f1f1;
+				padding: 0.4rem;
+				background: #fff;
+				overflow: hidden;
+				margin-left: -1.96rem;
+				margin-top: -1.96rem;
+			}
+			.pic img{
+				height: 100%;
+				width: 100%;
+			}
+			.footer img{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="name">
+			Iris肖
+		</div>
+		<div class="title">
+			我的2017关键词
+		</div>
+		<div class="content">
+			<p><b>低调</b><span></span></p>
+			<p><b>加薪</b><span></span></p>
+			<p><b>实现</b><span></span></p>
+			<p><b>独立</b><span></span></p>
+			<p><b>潮人</b><span></span></p>
+			<p><b>健康</b><span></span></p>
+			<p><b>蜕变</b><span></span></p>
+			<p><b>我好</b><span></span></p>
+			<p><b>突破</b><span></span></p>
+			<p><b>疯狂</b><span></span></p>
+			<p class="pic">
+				<img src="img/3176184aaf050384deca246b0ee5bffc.jpg"/>
+			</p>
+		</div>
+		<div class="footer">
+			<img src="img/ma.jpg"/>
+		</div>
+	</body>
+</html>
